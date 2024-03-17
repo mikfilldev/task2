@@ -1,10 +1,10 @@
 #!/bin/bash
 
-source script_to_test.sh
+source bash.sh
 
 TMP_FILE=$(mktemp)
 
-bash script_to_test.sh > "$TMP_FILE"
+bash bash.sh > "$TMP_FILE"
 
 EXPECTED_COUNTER=0
 while read -r line; do
